@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi Aplicación{% endblock %}</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Aplicación Flask:) </h1>
+
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/tareas">Tareas</a>
+            <a href="/usuarios">Usuarios</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Proyecto desarrollado con Flask y Jinja2</p>
+    </footer>
+
+</body>
+</html>
